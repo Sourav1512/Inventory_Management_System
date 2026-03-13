@@ -1,0 +1,16 @@
+--- EMAIL NOTIFICATION ---
+Date: 2026-03-12 16:08:37
+To: singhsouravofficial15@gmail.com
+Subject: Welcome to StockFlow - Please verify your email
+Message:
+Hello sourav,
+
+Your StockFlow staff account has been created.
+Please click the following link to verify your email address and continue with your profile setup:
+
+http://localhost:5173/verify-email?token=4181dac4d826979a42329c2c5a189308
+
+Thank you,
+The StockFlow Admin Team
+--------------------------
+

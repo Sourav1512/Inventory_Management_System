@@ -1,10 +1,19 @@
 <?php
+require_once __DIR__ . '/env.php';
+
 class Database {
-    private $host = 'localhost';
-    private $db_name = 'inventory_system';
-    private $username = 'root';
-    private $password = '';
+    private $host;
+    private $db_name;
+    private $username;
+    private $password;
     private $conn;
+
+    public function __construct() {
+        $this->host = $_ENV['DB_HOST'] ?? 'localhost';
+        $this->db_name = $_ENV['DB_NAME'] ?? 'inventory_system';
+        $this->username = $_ENV['DB_USER'] ?? 'root';
+        $this->password = $_ENV['DB_PASS'] ?? '';
+    }
 
     public function connect() {
         $this->conn = null;

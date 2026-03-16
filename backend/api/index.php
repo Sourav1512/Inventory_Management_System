@@ -36,25 +36,25 @@ $id = $route_parts[1] ?? null;
 try {
     switch ($resource) {
         case 'login':
-            require_once '../controllers/AuthController.php';
+            require_once __DIR__ . '/../controllers/AuthController.php';
             $controller = new AuthController();
             $controller->login();
             break;
             
         case 'register':
-            require_once '../controllers/AuthController.php';
+            require_once __DIR__ . '/../controllers/AuthController.php';
             $controller = new AuthController();
             $controller->register();
             break;
             
         case 'verify-email':
-            require_once '../controllers/StaffController.php';
+            require_once __DIR__ . '/../controllers/StaffController.php';
             $controller = new StaffController();
             $controller->verifyEmail();
             break;
             
         case 'staff':
-            require_once '../controllers/StaffController.php';
+            require_once __DIR__ . '/../controllers/StaffController.php';
             $controller = new StaffController();
             if ($id === 'setup') {
                 $controller->completeSetup();
@@ -75,56 +75,56 @@ try {
             break;
             
         case 'products':
-            require_once '../controllers/ProductController.php';
+            require_once __DIR__ . '/../controllers/ProductController.php';
             $controller = new ProductController();
             $controller->handleRequest($method, $id);
             break;
             
         // Additional routes for categories, suppliers, stock, purchase, reports
         case 'categories':
-            require_once '../controllers/CategoryController.php';
+            require_once __DIR__ . '/../controllers/CategoryController.php';
             $controller = new CategoryController();
             $controller->handleRequest($method, $id);
             break;
             
         case 'suppliers':
-            require_once '../controllers/SupplierController.php';
+            require_once __DIR__ . '/../controllers/SupplierController.php';
             $controller = new SupplierController();
             $controller->handleRequest($method, $id);
             break;
             
         case 'users':
-            require_once '../controllers/UserController.php';
+            require_once __DIR__ . '/../controllers/UserController.php';
             $controller = new UserController();
             $controller->handleRequest($method, $id);
             break;
 
         case 'stock':
-            require_once '../controllers/StockController.php';
+            require_once __DIR__ . '/../controllers/StockController.php';
             $controller = new StockController();
             $controller->handleRequest($method, $id);
             break;
 
         case 'purchases':
-            require_once '../controllers/PurchaseController.php';
+            require_once __DIR__ . '/../controllers/PurchaseController.php';
             $controller = new PurchaseController();
             $controller->handleRequest($method, $id);
             break;
             
         case 'reports':
-            require_once '../controllers/ReportController.php';
+            require_once __DIR__ . '/../controllers/ReportController.php';
             $controller = new ReportController();
             $controller->handleRequest($method, $id);
             break;
 
         case 'contact':
-            require_once '../controllers/ContactController.php';
+            require_once __DIR__ . '/../controllers/ContactController.php';
             $controller = new ContactController();
             $controller->handleRequest($method, $id);
             break;
 
         case 'dashboard':
-            require_once '../controllers/DashboardController.php';
+            require_once __DIR__ . '/../controllers/DashboardController.php';
             $controller = new DashboardController();
             $controller->handleRequest($method, $id);
             break;

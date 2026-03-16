@@ -1,6 +1,8 @@
 <?php
-require_once '../models/User.php';
-require_once '../services/EmailService.php';
+require_once __DIR__ . '/AuthController.php';
+require_once __DIR__ . '/../models/User.php';
+require_once __DIR__ . '/../services/EmailService.php';
+require_once __DIR__ . '/../controllers/AuthController.php';
 
 class StaffController {
     

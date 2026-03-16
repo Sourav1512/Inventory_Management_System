@@ -84,9 +84,15 @@
 
 ### 3. Backend (API) Setup
 1. Open up a terminal at the root project directory.
-2. Start PHP's built-in rapid server targeting the `backend` folder via port `8000`:
+2. Enter the backend directory and copy the environment template:
    ```bash
-   php -S localhost:8000 -t backend
+   cd backend
+   cp .env.example .env
+   ```
+   *(Edit the `.env` file if your database credentials differ from the defaults)*
+3. Start PHP's built-in rapid server targeting the `backend` folder via port `8000`, using the provided router script:
+   ```bash
+   php -S localhost:8000 server.php
    ```
 
 ### 4. Frontend (React) Setup
@@ -94,11 +100,15 @@
    ```bash
    cd frontend
    ```
-2. Rapidly install dependencies:
+2. Copy the frontend environment template for the API URL:
+   ```bash
+   cp .env.example .env
+   ```
+3. Rapidly install dependencies:
    ```bash
    npm install
    ```
-3. Start the Vite development framework:
+4. Start the Vite development framework:
    ```bash
    npm run dev
    ```

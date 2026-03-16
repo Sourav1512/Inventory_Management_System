@@ -1,5 +1,6 @@
 <?php
-require_once '../models/ContactMessage.php';
+require_once __DIR__ . '/AuthController.php';
+require_once __DIR__ . '/../models/ContactMessage.php';
 require_once 'AuthController.php';
 
 class ContactController {

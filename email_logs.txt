@@ -14,3 +14,34 @@ Thank you,
 The StockFlow Admin Team
 --------------------------
 
+--- EMAIL NOTIFICATION ---
+Date: 2026-03-16 19:24:41
+To: souravsinghbhai@gmail.com
+Subject: StockFlow - Profile Setup Complete
+Message:
+Hello sourav,
+
+Your staff profile setup is complete!
+Your unique Staff ID is: 
+
+You can now log in and access your dashboard.
+
+Best regards,
+The StockFlow Admin Team
+--------------------------
+
+--- EMAIL NOTIFICATION ---
+Date: 2026-03-16 19:24:41
+To: admin@example.com
+Subject: StockFlow Admin Alert - New Staff Profile Completed
+Message:
+Admin Alert,
+
+A new staff member has successfully completed their profile setup.
+Name: sourav
+Staff ID: 
+
+Please log in to the admin dashboard to review their details.
+
+--------------------------
+

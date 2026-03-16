@@ -1,6 +1,7 @@
 <?php
-require_once '../models/Purchase.php';
-require_once '../controllers/AuthController.php';
+require_once __DIR__ . '/AuthController.php';
+require_once __DIR__ . '/../models/Purchase.php';
+require_once __DIR__ . '/../controllers/AuthController.php';
 
 class PurchaseController {
     public function handleRequest($method, $id) {
